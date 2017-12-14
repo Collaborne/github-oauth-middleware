@@ -2,6 +2,8 @@
 
 Express middleware that limits access to selected Github users (uses passport)
 
+[Blog post](https://medium.com/@ronnyroeller/secure-internal-tools-with-github-login-ae812c834e04) about the middleware.
+
 # License
 
     Copyright 2017 Collaborne B.V.
