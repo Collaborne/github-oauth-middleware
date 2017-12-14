@@ -15,14 +15,20 @@
   "main": "index.js",
   "private": false,
   "scripts": {
+    "install": "npm-warn-shrinkwrap && check-node-version --package",
     "test": "echo 'No tests yet'"
   },
   "dependencies": {
+    "check-node-version": "^3.1.1",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
     "log4js": "^2.4.1",
+    "npm-warn-shrinkwrap": "^1.0.2",
     "passport": "^0.4.0",
     "passport-github": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
   }
 }
