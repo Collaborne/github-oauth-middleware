@@ -2,11 +2,21 @@
   "name": "github-oauth-middleware",
   "version": "0.0.1",
   "description": "Express middleware that limits access to selected Github users (uses passport)",
-  "main": "index.js",
-  "repository": "https://github.com/Collaborne/github-oauth-middleware.git",
   "author": "Collaborne B.V. <info@collaborne.com>",
   "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Collaborne/github-oauth-middleware/issues"
+  },
+  "homepage": "https://github.com/Collaborne/github-oauth-middleware#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Collaborne/github-oauth-middleware.git"
+  },
+  "main": "index.js",
   "private": false,
+  "scripts": {
+    "test": "echo 'No tests yet'"
+  },
   "dependencies": {
     "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
