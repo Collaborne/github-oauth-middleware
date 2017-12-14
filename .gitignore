@@ -3,3 +3,7 @@
 npm-shrinkwrap.json
 package-lock.json
 yarn.lock
+
+*.orig
+*.porig
+*.rej
