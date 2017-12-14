@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * Provides middleware for authentification & authorization via Github
  */
