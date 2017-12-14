@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/Collaborne/github-oauth-middleware.git",
   "author": "Collaborne B.V. <info@collaborne.com>",
-  "license": "Apache 2",
+  "license": "Apache-2.0",
   "private": false,
   "dependencies": {
     "cookie-parser": "^1.4.3",
