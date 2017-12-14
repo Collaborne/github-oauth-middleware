@@ -1,6 +1,4 @@
-# github-oauth-middleware [![Build Status](https://travis-ci.org/Collaborne/github-oauth-middleware.svg?branch=master)](https://travis-ci.org/Collaborne/github-oauth-middleware)
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/Collaborne/github-oauth-middleware.svg)](https://greenkeeper.io/)
+# github-oauth-middleware [![Build Status](https://travis-ci.org/Collaborne/github-oauth-middleware.svg?branch=master)](https://travis-ci.org/Collaborne/github-oauth-middleware) [![Greenkeeper badge](https://badges.greenkeeper.io/Collaborne/github-oauth-middleware.svg)](https://greenkeeper.io/)
 
 Express middleware that limits access to selected Github users (uses passport)
 
