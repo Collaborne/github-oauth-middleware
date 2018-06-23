@@ -31,7 +31,7 @@
     "passport-github": "^1.1.0"
   },
   "devDependencies": {
-    "eslint": "^4.13.1",
+    "eslint": "^5.0.0",
     "eslint-config-collaborne": "^1.1.1"
   },
   "engines": {
