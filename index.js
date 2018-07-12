@@ -9,6 +9,13 @@ const passport = require('passport');
 const session = require('express-session');
 const GitHubStrategy = require('passport-github').Strategy;
 
+function redirect(res, location) {
+	res.writeHead(302, {
+		Location: location,
+	});
+	return res.end();
+}
+
 function initPassport(githubRedirectUrl, githubClientId, githubClientSecret) {
 	passport.use(new GitHubStrategy({
 		callbackURL: githubRedirectUrl,
@@ -29,7 +36,7 @@ function createIsLoggedIn(whiteListedUsers) {
 		if (!req.isAuthenticated()) {
 			// If they aren't redirect them to the home page
 			logger.info('Unauthenticated request. Forwarded to login.');
-			return res.redirect('/auth/github');
+			return redirect(res, '/auth/github');
 		}
 
 		// User is authenticated, check that they are authorized.
@@ -50,7 +57,7 @@ githubAuthRouter.get('/auth/github/callback',
 	(req, res) => {
 		logger.info(`Successfully authenticated ${req.user}, redirect to home.`);
 		// Wait until cookie is set
-		setTimeout(() => res.redirect('/'), 500);
+		setTimeout(() => redirect(res, '/'), 500);
 	});
 
 module.exports = ({githubRedirectUrl, githubClientId, githubClientSecret, githubSessionSecret, whiteListedUsers}) => {
