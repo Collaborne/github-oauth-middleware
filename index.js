@@ -4,7 +4,7 @@
 
 const cookieParser = require('cookie-parser');
 const express = require('express');
-const logger = require('log4js').getLogger('auth');
+const logger = require('@log4js-node/log4js-api').getLogger('auth');
 const passport = require('passport');
 const session = require('express-session');
 const GitHubStrategy = require('passport-github').Strategy;
